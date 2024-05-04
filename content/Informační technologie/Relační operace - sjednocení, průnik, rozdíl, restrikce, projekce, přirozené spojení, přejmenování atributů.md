@@ -56,7 +56,7 @@ TABLE movies1;                 | TABLE movies2;
 (2 rows)
 ```
 
-## Výrazy ve `FROM` kauzuli
+## Výrazy ve `FROM` klauzuli
 - Výrazem `expr AS name` ve `FROM` klauzuli určíme tabulku, která bude hodnotou tabulkového výrazu `expr` a bude se jmenovat `name`.
 - Například:
 ```sql
@@ -102,7 +102,7 @@ A Space Odyssey | 1968 |    149
 
 SELECT *
 FROM ( TABLE movies ) AS t
-WHERE  title = ’The Avengers’;
+WHERE  title = 'The Avengers';
     title     | year | length
 --------------+------+--------
  The Avengers | 2012 |    143
@@ -113,7 +113,7 @@ Výraz můžeme ještě zjednodušit:
 ```sql
 SELECT *
 FROM   movies
-WHERE  title = ’The Avengers’;
+WHERE  title = 'The Avengers';
     title     | year | length
 --------------+------+--------
  The Avengers | 2012 |    143
@@ -164,8 +164,8 @@ FROM   movies;
 - Výsledná relace obsahuje všechny kombinace tuplů z obou relací, které mají stejné hodnoty ve sloupcích, podle kterých se spojují.
 ```sql
 SELECT table1.*,
-       table2.column1',
-       table2.column1'
+       table2.column1,
+       table2.column2
 		...
 FROM expr1 AS table1,
      expr2 AS table2
@@ -254,3 +254,9 @@ WHERE condition )
 	4. Dále se provede restrikce relace $D''$ vzhledem k podmínce `condition`. Jako výsledek obdržíme relaci $D'''$.
 	5. Následuje projekce relace $D'''$ na `{table1.column1, table2.column2, ...}`. Obdržíme relaci $D''''$
 	6. Nakonec se provede přejmenování $D''''$ sloupce `table1.column1` na `column1`, `table2.column2` na `column2`, ... Získáme výstupní relaci $D'''''$.
+
+
+##### Navigace
+Předchozí:  [[Výraz SELECT v SQL]]
+Následující: [[Integrita dat - primární a cizí klíč]]
+Celý okruh: [[2. Informační technologie]]

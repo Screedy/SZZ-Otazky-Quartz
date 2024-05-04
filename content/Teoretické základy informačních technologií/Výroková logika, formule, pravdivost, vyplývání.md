@@ -41,7 +41,7 @@
 - Výrazy obsahující *proměnné*, ze kterých se po dosazení hodnot za proměnné stanou výroky, nazýváme **výrokové formy**
 
 - **Výrokové formy** bývají zvykem **označovat písmenem, za kterým jsou v závorce uvedeny všechny proměnné, které forma obsahuje**
-	- *Číslo x je větší nebo rovno 3 = **V(x)***
+	- Číslo x je větší nebo rovno 3 = **V(x)**
 	- *$x+y \geq z=U(x,y,z)$*
 
 - **Kvantifikátory** jsou **jazykové výrazy, kterými z výrokových forem vznikají výroky**
@@ -78,7 +78,7 @@
 
 - Formule daného jazyka výrokové logiky je definovaná následovně:
 	- **každý výrokový symbol je formule** (tzv. atomické)
-	- jsou-li φ a 𝜓 formule, jsou i formule (tzv. složené) i výrazy:
+	- jsou-li φ (phi) a 𝜓 (psi) formule, jsou i formule (tzv. složené) i výrazy:
 		- ㄱφ
 		- (φ ∧ 𝜓)
 		- (φ ∨ 𝜓)
@@ -92,9 +92,9 @@
 		- $\mid\mid p\mid\mid_e$ = e(p)
 	- Je-li $\phi$ složená formule, pak
 		- $\mid\mid\neg\psi\mid\mid_e$ = $\neg'\mid\mid \psi\mid\mid_{e}$
-		- $\mid\mid \psi \ \land \  \theta\mid\mid \ = \  \mid\mid \psi\mid\mid_{e} \ \land' \mid \mid \theta \mid\mid_{e}$
+		- $\mid\mid \psi \ \land \  \theta\mid\mid_{e}\ = \  \mid\mid \psi\mid\mid_{e} \ \land' \mid \mid \theta \mid\mid_{e}$
 		- $\mid\mid\phi\lor\theta\mid\mid_{e} \ =\ \mid\mid\phi\mid\mid_{e}\ \lor' \  \mid\mid\theta\mid\mid_{e}$
-		- $\mid\mid\phi\rightarrow\theta\mid\mid_{e} \ =\ \mid\mid\phi\mid\mid_{e}\ \rightarrow' \  \mid\mid\theta\mid\mid_{e}$
+		- $\mid\mid\phi\rightarrow\theta\mid\mid _{e} \ =\ \mid\mid\phi\mid\mid_{e}\ \rightarrow' \  \mid\mid\theta\mid\mid_{e}$
 		- $\mid\mid\phi\leftrightarrow\theta\mid\mid_{e} \ =\ \mid\mid\phi\mid\mid_{e}\ \leftrightarrow' \  \mid\mid\theta\mid\mid_{e}$
 
 - **Tautologie** = je-li formule při **každém ohodnocení pravdivá**

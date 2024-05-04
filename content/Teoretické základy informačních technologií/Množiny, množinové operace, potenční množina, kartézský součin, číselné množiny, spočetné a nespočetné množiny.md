@@ -16,8 +16,8 @@
 	- Označujeme symbolem "$=$"
 	- **Pro každé $x$ platí: $x\in A$, právě když $x \in B$**
 	- Dvě množiny obsahují stejné prvky
-	- Když $A=B$ říkáme, že množina $A$ se rovná množine $B$
-	- **$A=B$** ==platí, právě když platí zároveň $A \subseteq B$ a $A \neq B$== 
+	- Když $A=B$ říkáme, že množina $A$ se rovná množině $B$
+	- **$A=B$** platí, právě když platí zároveň $A \subseteq B$ a $B \subseteq A$  
 2. **Inkluze**
 	- Označujeme symbolem "$\subseteq$"
 	- **Pro káždé $x$ platí: jestliže $x \in A$, pak $x \in B$**
@@ -72,6 +72,7 @@
 2. Celá čísla - $\mathbb{Z}$
 3. Racionální čísla - $\mathbb{Q}$
 4. Reální čísla - $\mathbb{R}$
+![[MacBook-2024-05-01-001135@2x.png | 350]]
 
 ### Množiny konečné/nekonečné a spočetné/nespočetné
 - Množiny se dělí na:

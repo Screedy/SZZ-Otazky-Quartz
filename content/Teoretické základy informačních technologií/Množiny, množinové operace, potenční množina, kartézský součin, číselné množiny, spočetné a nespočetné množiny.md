@@ -54,14 +54,14 @@
 - Značí se $2^{X}$
 - Je-li $X$ konečná, pak $\mid 2^{X} \mid = 2^{\mid X \mid}$
 - **Vždy obsahuje prázdnou množinu** ($\varnothing$), protože ta je podmnožinou každé množiny
-- např.
-	$X = \{$a, b$\} \rightarrow 2^{X} = \{ \varnothing, \{$a}, {b}, {a, b}}, 
-	$X = \varnothing \rightarrow 2^{X} = \{\varnothing\}$.
+>[!Example] Příklad
+>- $X = \set{a,b} \rightarrow 2^{X}=\set{\varnothing, \set{a}, \set{b}, \set{a,b}}$
+>- $X = \varnothing \rightarrow 2^{X} = \set{\varnothing}$
 
 ### Kartézský součin
-- Kartézský součin n množin je **množina všech uspořádaných n-tic prvků z těchto množin**
+- Kartézský součin $n$ množin je **množina všech uspořádaných $n$-tic prvků z těchto množin**
 - $X_{1} \times ... \times X_{n} = \{ <x_{1}, ... x_{n}> \mid x_{1} \in X_{1}, ..., x_{n} \in X_{n}\}$
-- Je-li $X_{1} = ... = X_{n} = X$, pak píšeme $X^{n}$ a říkáme **n-tá kartézská mocnina množiny $X$**
+- Je-li $X_{1} = ... = X_{n} = X$, pak píšeme $X^{n}$ a říkáme **$n$-tá kartézská mocnina množiny $X$**
 - Velikost $\mid A \times B \mid$ je $\mid A \mid \times \mid B \mid$
 
 ### Speciální množiny
@@ -72,7 +72,7 @@
 2. Celá čísla - $\mathbb{Z}$
 3. Racionální čísla - $\mathbb{Q}$
 4. Reální čísla - $\mathbb{R}$
-![[MacBook-2024-05-01-001135@2x.png | 350]]
+![[MacBook-2024-05-01-001135.png| 350]]
 
 ### Množiny konečné/nekonečné a spočetné/nespočetné
 - Množiny se dělí na:

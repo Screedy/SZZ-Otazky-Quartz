@@ -1,6 +1,6 @@
 ### Uspořádání
-- Uspořádání je matematický protějšek pojmu hierarchie
-- Binární relace $\cup$ na množině $A \neq \varnothing$ se nazývá **uspořádání**, je-li **reflexivní, antisymetrická a tranzitivní.**
+- Uspořádání je matematický protějšek pojmu **hierarchie**
+- Binární relace $U$ na množině $A \neq \varnothing$ se nazývá **uspořádání**, je-li **reflexivní, antisymetrická a tranzitivní.**
 - Vlastnosti:
 	- **Reflexivní** - Každé $x$ z $X$ je totožné s $x$, tedy $x = x$
 	- **Tranzitivní** - Pokud $x \leq y$ a $y \leq z$, pak i $x \leq z$
@@ -17,13 +17,13 @@
 - V lineárním uspořádání, neboli řetězci (úplné uspořádání) jsou každé dva prvky srovnatelné, tedy můžeme lineární uspořádání chápat jako matematický protějšek k pojmu "tradiční srovnání čísel"
 - Každá relace identity $id_{x}$ **je uspořádání**, které nazýváme **antiřetězec**, v kterém každé dva různé prvky z $X$ jsou nesrovnatelné ($x \mid \mid y$). Antiřetězce jsou nejmenší uspořádání, protože každé uspořádání na $X$ obsahuje $id_{x}$
 
-- Relaci uspořádání "menší rovno" na číselných množinách $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, ...$ nazýváme **přirozené uspořádání čísel** (je reflexivní, antisymetrické, tranzitivní a úplné), <u>nejedná se však o jediné</u> přirození uspořádání čísel na číselných množinách
+- Relaci uspořádání "menší rovno" na číselných množinách $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, ...$ nazýváme **přirozené uspořádání čísel** (je reflexivní, antisymetrické, tranzitivní a úplné), <u>nejedná se však o jediné</u> přirozené uspořádání čísel na číselných množinách
 - Když $\leq$ je uspořádání na $X$, pak $\leq^{-1}$ (inverzní) je uspořádání na $X$, které označujeme $\geq$
 
 - **Princip duality =** V praxi to znamená, že pokud řeknu tvrzení pro nejmenší prvek v uspořádané množině $<X,R>$, tak <u>platí</u> i pro největší prvek v uspořádaní množině $<X,R^{-1}>$
 
 ### Znázornění uspořádání a pokrytí
-- Konečnou relaci uspořádání můžeme samozřejmě znázornit matící, nebo orientovaným grafem, ale díky speciálním vlastnostem konečných uspořádání je můžeme znázorňovat mnohem přehledněji pomocí speciálních diagramů
+- Konečnou relaci uspořádání můžeme samozřejmě znázornit maticí, nebo orientovaným grafem, ale díky speciálním vlastnostem konečných uspořádání je můžeme znázorňovat mnohem přehledněji pomocí speciálních diagramů
 
 - Ke <u>každému</u> uspořádání $\leq$ na $X$ lze uvažovat odvozenou **relaci** $\prec$ definovanou předpisem
 	- **$x \prec y$, právě když $x < y$ a pro každé $z \in X$ platí: $x \leq z \leq y$ pak $z \in \{x,y\}$**
@@ -37,19 +37,20 @@
 	- $\leq = Tra(Ref(\prec))$ 
 
 - Relace pokrytí je:
-	- Irreflexivní, Asymetrická a není tranzitivní
+	- Ireflexivní, Asymetrická a není tranzitivní
 
 ### Hasseův diagram
 - **Hasseův diagram** je uspořádání $\leq$ na konečné množině $X$
 	- Prvky $x \in X$ se znázorní jako kroužky
 	- Je-li $x \leq y$, nakreslíme kroužek $x$ níže než kroužek $y$
 	- Je-li $x \prec y$, propojíme kroužky $x$ a $y$ úsečkou
-- Příklad:
-![[MacBook-2024-03-05-000783.png| 700]]
+
+>[!Example] Příklad hasseova diagramu
+>![[MacBook-2024-03-05-000783.png| 700]]
 
 
 ---
-Není v okruhu
+
 ### Speciální prvky v uspořádaných množinách a jejich vztahy
 - Nechť $<X, \leq >$ je uspořádaná množina. Prvek $x \in X$ se nazývá:
 	- **minimální**, jestliže pro každý $y \in X$ platí: pokud $y \leq x$, pak $x = y$
@@ -57,7 +58,7 @@ Není v okruhu
 	- **maximální**, jestliže pro každý $y \in X$ platí: pokud $x \leq y$, pak $x = y$
 	- **největší**, jestliže $y \leq x$ pro každý $y \in X$ (je pouze jeden)
 
-- Nechť $<X, \leq>$ je uspořádaná množina. Pak platí
+- Nechť $<X, \leq>$ je uspořádaná množina. Pak platí:
 	- V $<X, \leq >$ existuje nejvýše **jeden největší** a **jeden nejmenší** prvek
 	- Je-li $x \in X$ **největší (nejmenší)** prvek, pak je také **maximální (minimální)** a žádné další maximální (minimální) prvky se v $X$ nevyskytují
 	- Pokud je $\leq$ **lineární uspořádání**, pak je $x \in X$ **největší (nejmenší)** prvek, **právě když** je **maximální (minimální)**

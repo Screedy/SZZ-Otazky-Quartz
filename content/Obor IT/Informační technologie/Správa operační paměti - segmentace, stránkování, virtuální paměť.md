@@ -27,7 +27,7 @@
 ![[MacBook-2024-05-03-001160.png]]
 - logická adresa: pd, kde p je číslo stránky a d je offset
 - fyzická adresa: fd
-- číslo stránky se vezme jako index do stárnkovací tabulky a nahradí se tam uložených číslem rámce f
+- číslo stránky se vezme jako index do stránkovací tabulky a nahradí se tam uložených číslem rámce f
 ---
 - v praxi se používají víceúrovňové tabulky
 	- část logické adresy udává tabulku, další část index v tabulce a další část offset
@@ -45,7 +45,7 @@
 	- oproti tomu segmentace umožňuje rozdělit program do logických celků
 ---
 - při použití segmentace a stránkování programy nepracují přímo s lineární adresou
-- používají logickou adresu ve tvaru segment + offset a ta je poté převádí na fyzickou adresu pomocí stránkování
+- používají logickou adresu ve tvaru segment + offset a ta se poté převádí na fyzickou adresu pomocí stránkování
 >[!Example]+ Ukázka segmentace
 ![[MacBook-2024-05-03-001162.png]]
 

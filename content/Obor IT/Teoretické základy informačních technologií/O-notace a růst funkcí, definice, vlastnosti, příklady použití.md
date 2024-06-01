@@ -1,11 +1,3 @@
-### Asymptotická horní mez ($f$ roste nejvýše tak rychle jako $g$)
-- Pro libovolné funkce $f, g: \mathbb{N} \rightarrow \mathbb{N}$ znamená zápis $f \in O(g)$ toto:$$(\exists k \in \mathbb{N})(\exists n_{0} \in \mathbb{N})(\forall n \geq n_{0}):f(n) \leq k \ \cdot \ g(n)$$
-
-### Asymptotická oboustranná mez ($f$ roste stejně rychle jako $g$)
-- Pro libovolné funkce $f, g: \mathbb{N} \rightarrow \mathbb{N}$ zápis $f \in \Theta(g)$ znamená, že $f \in O(g)$ a $g \in O(f)$
-
-### Asymptotická ostrá horní mez ($f$ roste pomaleji než $g$)
-- Pro libovolné funkce $f, g: \mathbb{N} \rightarrow \mathbb{N}$ zápis $f \in o(g)$ znamená, že $$(\forall k \in \mathbb{N})(\exists n_{0} \in \mathbb{N})(\forall n \geq n_{0}):k \ \cdot \ f(n) < g(n)$$
 
 ### Základní pojmy pro porovnání růstu funkcí
 - $O(g)$ ... **Asymptotická horní mez**
@@ -28,11 +20,11 @@
 
 - $o(g)$ ... **Asymptotická ostrá horní mez**
 	- $o(g(n)) = \{ f(n) \mid (\forall c \in \mathbb{N})(\exists n_{0} \in \mathbb{N})(\forall n \geq n_{0}): 0 <f(n) < c \cdot g(n) \}$
-	- **Asymptotická ostrá horní mez funkce $g(n)$** je množina funkcí $f(n)$, takových, že **pro každé** přirozené číslo $c > 0$ **existuje** přirozené číslo $n_{0}$ tak, že **pro každé** $n \geq n_{0}$ platí: $0 < c \cdot f(n) < g(n)$
+	- **Asymptotická ostrá horní mez funkce $g(n)$** je množina funkcí $f(n)$, takových, že **pro každé** přirozené číslo $c > 0$ **existuje** přirozené číslo $n_{0}$ tak, že **pro každé** $n \geq n_{0}$ platí: $0 <  f(n) < c \cdot g(n)$
 
 - $\omega (g)$ ... Asymptotická ostrá dolní mez
-	- $\omega (g(n)) = \{ f(n) \mid (\forall c \in \mathbb{N})(\exists n_{0} \in \mathbb{N})(\forall n \geq n_{0}): 0 < g(n) < c \cdot f(n) \}$
-	- **Asymptotická ostrá dolní mez funkce $g(n)$** je množina funkcí $f(n)$, takových, že **pro každé** přirozené číslo $c > 0$ **existuje** přirozené číslo $n_{0}$ tak, že **pro každé** $n \geq n_{0}$ platí: $0 < g(n) < c \cdot f(n)$
+	- $\omega (g(n)) = \{ f(n) \mid (\forall c \in \mathbb{N})(\exists n_{0} \in \mathbb{N})(\forall n \geq n_{0}): 0 < c \cdot g(n) < f(n) \}$
+	- **Asymptotická ostrá dolní mez funkce $g(n)$** je množina funkcí $f(n)$, takových, že **pro každé** přirozené číslo $c > 0$ **existuje** přirozené číslo $n_{0}$ tak, že **pro každé** $n \geq n_{0}$ platí: $0 < c \cdot g(n) < f(n)$
 
 ### Základní pravidla (vlastnosti)
 #### Věta o tranzitivitě odhadů

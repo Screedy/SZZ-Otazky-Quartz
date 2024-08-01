@@ -1,7 +1,8 @@
 
 ## Abeceda a jazyk
 ### Abeceda
-- libovolná konečná množina $\Sigma$, jejíž prvky nazýváme znaky abecedy
+- libovolná konečná množina $\Sigma$
+- prvky nazýváme **znaky abecedy**
 >[!Example] Příklad abecedy
 >- množina $\set{a,b}$
 >- množina $\set{0,1,...,9}$
@@ -61,7 +62,7 @@
 		- Podle definice zejména platí $\varnothing .M = M.\varnothing = \varnothing$ a $\set{\epsilon}.M = M.\set{\epsilon} = M$ pro libovolný jazyk $M$. Operace zřetězení jazyků je také zřejmě **asociativní**
 	- **$i$-tá mocnina jazyka $L$** je definována induktivně pro každé $i \in N_{0}$:
 		- $L^{0}=\set{\epsilon}$
-		- $L^{i+1} é L.L^{i}$
+		- $L^{i+1} = L.L^{i}$
 	 Zejména tedy $\varnothing^{0}=\set{\epsilon}, \varnothing^{i} = \varnothing$ pro libovolné $i \in N$ a $\set{\epsilon}^{i}=\set{\epsilon}$ pro libovolné $j \in N_{0}$
 	- **Iterace jazyka $L$** je jazyk $L^{*}=\cup_{i=0}^{\infty} L^{i}$
 	- **Pozitivní iterace jazyka $L$** je taky $L^{+}=\cup_{i=0}^{\infty} L^{i}$. Obecně není pravda, že $L^{+}=L^{*} \backslash \set{\epsilon}$
@@ -123,15 +124,15 @@
 - Někdy se též taková gramatiky označují jako **gramatiky bez omezení či frázové gramatiky**
 
 #### Typ 1
-- Též **kontextová**, Context-Sensitive, CSG, méně často též *monoténní*
+- Též **kontextová** gramatika, Context-Sensitive, CSG, méně často též *monoténní*
 - Gramatika je typu $1$, jestliže pro každé její pravidlo $\alpha \rightarrow \beta$ platí $| \alpha | \leq | \beta |$ s eventuelní výjimkou pravidla $S \rightarrow \epsilon$, pokud se $S$ nevyskytuje na pravé straně žádného pravidla
 
 #### Typ 2
-- Též **bezkontextová**, Context-Free, CFG
+- Též **bezkontextová** gramatika, Context-Free, CFG
 - Gramatika je typu $2$, jestliže každé její pravidlo je tvaru $A \rightarrow \alpha$, kde $| \alpha | \geq 1$ s eventuelní výjimkou pravidla $S \rightarrow \epsilon$, pokud se $S$ nevyskytuje na pravé straně žádného pravidla
 
 #### Typ 3
-- Též **regulární**, pravolineární
+- Též **regulární** gramatika, pravolineární
 - Gramatika je typu $3$, jestliže každé její pravidlo je tvaru $A \rightarrow aB$ nebo $A \rightarrow a$ s eventuelní výjimkou pravidla $S \rightarrow \epsilon$, pokud se $S$ nevyskytuje na pravé straně žádného pravidla
 ---
 - Hierarchie gramatik také určuje příslušnou hierarchii jazyků
@@ -149,3 +150,4 @@
 Předchozí:  [[Geometrická interpretace určitého integrálu]]
 Následující: [[Regulární jazyky (definice, uzávěrové vlastnosti)]]
 Celý okruh: [[Obor INF-PVS/1. Teoretické základy informatiky]]
+

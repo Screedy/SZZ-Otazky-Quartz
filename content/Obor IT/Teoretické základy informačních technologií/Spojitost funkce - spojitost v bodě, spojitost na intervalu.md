@@ -1,9 +1,5 @@
 ## Spojitost funkce v bodě
-- Intuitivně si můžeme spojitost funkce v bodě představit jako, že "velmi malé" změně hodnoty proměnné z definičního oboru odpovídá "velmi malá" změna funkční hodnoty
-	- ještě hůře: graf "neobsahuje skoky či díry"
-- Velký význam při vyšetřování průběhu funkce
-	- např. hledání nulových bodů apod.
-### Formální definice
+
 - Říkáme, že $f : \mathbb{R} \to \mathbb{R}$ je spojitá v bodě $a \in \mathbb{R}$, právě když $$\lim_{x \to a} f(x) = f(a)$$
 	- slovy: limita v bodě $a$ funkce $f$ je definována a je rovna funkční hodnotě v tomto bodě 
 - Alternativní definice (**$\epsilon-\delta$ formulace spojitosti**):
@@ -12,16 +8,18 @@
 - Na rozdíl od limity:
 	- musí být funkce $f$ v bodě $a$ definována
 	- limita $\lim_{x \to a} f(x)$ musí být rovna funkční hodnotě v bodě $a$
-- ![[Pasted image 20240628132136.png]]
+- ![[Pasted image 20240628132136.png | 400]]
+
+>[!Example]- Isibalo - Spojitost v bodě a na intervalu
+><iframe width="660" height="385" src="https://www.youtube.com/embed/hLNV7Rzl8HI?si=2VaNekZ1HbTNDlwv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Základní vlastnosti spojitosti
-- z definice plyne několik podmínek pro splnění spojitosti
 - Nechť $f, g : \mathbb{R} \to \mathbb{R}$. Pak:
-1)  $f$ je spojitá v bodě $a$, právě když je v $a$ spojitá zprava i zleva
-2)  Jestliže je $f$ spojitá v $a$, pak existuje $U(a)$ takové, že $f$ je omezená na $U(a)$
-3)  Jsou-li $f, g$ spojité v $a$, pak $|f|$, $f + g$, $f \cdot g$ jsou také v $a$ spojité. Pokud $g(a) \neq 0$, je v $a$ spojitá i $\frac{f}{g}$
-	- Jsou-li funkce f a g spojité v bodě a, pak můžeme o součtu, rozdílu, součinu a podílu těchto funkcí prohlásit, že se jedná o funkci spojitou v bodě a.
-4) Nechť $f$ je spojitá v $a$ a $g$ spojitá v $A = f(a)$. Pak je také $g \circ f$ spojitá v $a$
+	1)  $f$ je spojitá v bodě $a$, právě když je v $a$ spojitá zprava i zleva
+	2)  Jestliže je $f$ spojitá v $a$, pak existuje $U(a)$ takové, že $f$ je omezená na $U(a)$
+	3)  Jsou-li $f, g$ spojité v $a$, pak $|f|$, $f + g$, $f \cdot g$ jsou také v $a$ spojité. Pokud $g(a) \neq 0$, je v $a$ spojitá i $\frac{f}{g}$
+		- Jsou-li funkce $f$ a $g$ spojité v bodě $a$, pak můžeme o součtu, rozdílu, součinu a podílu těchto funkcí prohlásit, že se **jedná o funkci spojitou** v bodě $a$.
+	4) Nechť $f$ je spojitá v $a$ a $g$ spojitá v $A = f(a)$. Pak je také $g \circ f$ spojitá v $a$
 
 ### O limitě složené funkce
 Nechť $f, g : \mathbb{R} \to \mathbb{R}$ a nechť:
@@ -37,6 +35,15 @@ Pak $\lim_{x \to a} g(f(x)) = g(A)$.
 Nechť $f : \mathbb{R} \to \mathbb{R}$ je definována na intervalu $(a, b)$.
 1. Říkáme, že $f$ je spojitá na $(a, b)$, je-li spojitá v každém bodě tohoto intervalu.
 2. Říkáme, že $f$ je spojitá na $\langle a, b \rangle$, je-li spojitá na $(a, b)$, v bodě $a$ je spojitá zprava a v bodě $b$ je spojitá zleva.
+
+##### Navigace
+
+Předchozí: [[Limita funkce včetně nevlastních, jednostranné limity]]
+Následující: [[Vlastnosti spojitých funkcí, spojitost složené a inverzní funkce]]
+Celý okruh: [[1. Teoretické základy informačních technologií]]
+
+---
+# Další věci k tomuto tématu
 
 ## Důsledky spojitosti funkce
 - Spojitost funkce na intervalu má zajímavé důsledky důležité pro vyšetření průběhu funkce
@@ -113,4 +120,5 @@ $$
 \lim_{x \to 0^+} \frac{1}{x} = \infty, \quad \text{resp.} \quad \lim_{x \to 0^-} \frac{1}{x} = -\infty
 $$
 
-	- ![[Pasted image 20240628133619.png]]
+- ![[Pasted image 20240628133619.png]]
+

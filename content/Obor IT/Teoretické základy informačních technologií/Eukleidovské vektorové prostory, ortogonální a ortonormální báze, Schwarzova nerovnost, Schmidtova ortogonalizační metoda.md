@@ -20,6 +20,7 @@
 	1. $\|c \cdot \vec{u}\|=|c| \cdot\|\vec{u}\|$,
 	2. $\|\vec{o}\|=0$ a pro $\vec{u} \neq \vec{o}$ pak $\|\vec{u}\|>0$.
 	3. $|\vec{u} \circ \vec{v}| \leq\|\vec{u}\| \cdot\|\vec{v}\|$  (**Schwarzova nerovnost**).
+		- Schwartzova nerovnost říká, že absolutní hodnota skalárního součinu dvou vektorů je vždy menší nebo rovna součinu jejich norm. Rovnost nastává pouze tehdy, když jsou vektory lineárně závislé, tj. jeden vektor je násobkem druhého.
 
 ### Úhel vektorů
 - Nechť $V$ je EVP, $\vec{u}, \vec{v} \in V, \vec{u} \neq \vec{o} \neq \vec{v}$. Úhlem vektorů $\vec{u}$ a $\vec{v}$ rozumíme číslo
@@ -41,7 +42,7 @@ $$
 - Nenulové vzájemně ortogonální vektory $\vec{u_1}, \vec{u_2}, \ldots, \vec{u_n}$ z EVP $V$ jsou **lineárně nezávislé**.
 - Jsou-li vektory $\vec{u_1}, \vec{u_2}, \ldots, \vec{u_n}$ vzájemně ortogonální v EVP $V$ a platí-li $V=$ $\left[\left\{\vec{u_1}, \vec{u_2}, \ldots, \vec{u_n}\right\}\right]$, pak množina $\left\{\vec{u_1}, \vec{u_2}, \ldots, \vec{u_n}\right\}$ je báze VP $V$, tzv. **ortogonální báze**.
 
-### Gram - Schmidtova ortogonalizační metoda
+### Gram-Schmidtova ortogonalizační metoda
 - Metoda, která z **báze** vektorového prostoru vytvoří **ortogonální bázi**.
 >[!Example] Příklad užití
 >- Mám 3 (bázové) vektory, které neleží v jedné rovině. 

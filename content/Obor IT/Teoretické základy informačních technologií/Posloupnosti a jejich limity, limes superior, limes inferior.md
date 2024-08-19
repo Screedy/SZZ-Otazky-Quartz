@@ -1,11 +1,11 @@
 ## Posloupnost
 - Každé zobrazení $f: \mathbb{N} \to \mathbb{A}$ nazýváme **číselná posloupnost**
-	- kde $A$ je libovolná množina libovolných objektů
+	- kde $\mathbb{A}$ je libovolná množina libovolných objektů
 	- pokud je oborem hodnot číselný, pak mluvíme o **číselné posloupnosti**
 - Posloupnost je **konečná**, jestliže je definičním oborem množina $\{1, 2, ..., k\}$, kde $k \in \mathbb{N}$
-	- takové posloupnosti označujeme jako *uspořádáná n-tice*
-- **Funkční hodnotu** funkce $f$ v bodě $n$ nazýváme **n-tý člen** posloupnosti a značíme $a_{n},\   b_{n}$ apod.
-- **Posloupnost s n-tým členem** pak zapisujeme $(a_{n})^{\infty}_{n=1}$ nebo jen $(a_{n})$
+	- takové posloupnosti označujeme jako *uspořádáná $n$-tice*
+- **Funkční hodnotu** funkce $f$ v bodě $n$ nazýváme $n$**-tý člen** posloupnosti a značíme $a_{n},\   b_{n}$ apod.
+- **Posloupnost s $n$-tým členem** pak zapisujeme $(a_{n})^{\infty}_{n=1}$ nebo jen $(a_{n})$
 	- čteme "posloupnost á en od jedné do nekonečna"
 - Neformálně lze chápat jako kolekci hodnot, ve které jsou prvky dány svým pořadím (sekvence)
 
@@ -93,12 +93,17 @@ $$
 - Zkoumáme chování posloupnosti pro velká přirozená čísla
 - Jedná se o hodnotu, ke které se posloupnost přibližuje, postupuje-li do nekonečna
 
+>[!Example]- Isibalo - Věty o limitách posloupností
+><iframe width="660" height="385" src="https://www.youtube.com/embed/VvBPNeOYQdI?si=KeYNvbsj0alltZ8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### Konečné limity posloupnosti
-- Číslo $a \in \mathbb{R}$ se nazývá **limita posloupnosti** $(a_n)_{n=1}^{\infty}$ právě když ke každému $\varepsilon > 0$ existuje $n_0 \in \mathbb{N}$ tak, že pro každé $n \geq n_0$ platí $|a_n - a| < \varepsilon$, jestliže $n \geq n_0$.
+>[!text] Definice
+>Číslo $a \in \mathbb{R}$ se nazývá **limita posloupnosti** $(a_n)_{n=1}^{\infty}$ právě když $$\forall \epsilon > 0 \ \exists n_{0}; \forall n > n_{0}: |a_{n}-A|< \epsilon$$
+>![[MacBook-2024-08-18-001933@2x.png]]
 - Píšeme $\lim_{{n \to \infty}} a_n = a$
 - Takovou posloupnosti $(a_n)_{n=1}^{\infty}$ pak nazýváme **konvergentní**
 	- říkáme že posloupnost $(a_n)_{n=1}^{\infty}$ konverguje k $a$
-	- např. geometrická posloupnost $(a_n)_{n=1}^\infty$, pro jejíž kvocient $q$ platí $|q| < 1$ , je konvergentní a  $\lim_{{n \to \infty}} a_n = 0$, konverguje tedy k 0
+	- např. geometrická posloupnost $(a_n)_{n=1}^\infty$, pro jejíž kvocient $q$ platí $|q| < 1$ , je konvergentní a  $\lim_{{n \to \infty}} a_n = 0$, konverguje tedy k $0$
 - Místo $\lim_{{n \to \infty}} = a$ píšeme také $a_{n} \to a$, čteme posloupnost $a_n$ **konverguje** ke své limitě $a$ 
 
 ### Nekonečné limity posloupnosti
@@ -108,14 +113,14 @@ $$
 
 ### Vlastnosti limit 
 -  Každá posloupnost má nejvýše jednu limitu 
-	- posloupnost buď limitu nemá (je divergentní) nebo má právě jednu
-- Každá konvergentní posloupnost je omezená
+	- posloupnost **buď limitu nemá** (je **divergentní**) nebo **má právě jednu**
+- Každá konvergentní posloupnost **je omezená**
 
 ### Aritmetické operace s limitami
 - Nechť $\lim_{n \to \infty} a_n = a$, $\lim_{n \to \infty} b_n = b$ jsou konvergentní posloupnosti a nechť $p, q$ jsou reálná čísla, pak platí:
 1. $\lim_{n \to \infty} (a_n + b_n) = a + b$
 2.  $\lim_{n \to \infty} (a_n * b_n) = a * b$
-3.  $\lim_{n \to \infty} (a_n / b_n) = a / b$  (pro $b \neq 0$)
+3.  $\lim_{n \to \infty} (\frac{a_n}{b_n}) = \frac{a}{b}$  (pro $b \neq 0$)
 4. $\lim_{n \to \infty} |a_n| = |a|$
 
 ## Limes inferior a Limes superior
@@ -126,7 +131,7 @@ $$
 - $\liminf_{n \to \infty} a_n \leq \limsup_{n \to \infty} a_n$
 - $\liminf_{n \to \infty} a_n = \limsup_{n \to \infty} (-a_n)$
 
-![[limes-inf-sup.png]]
+![[limes-inf-sup.png | 500]]
 ### Limes superior
 - Nechť $\{a_n\}_{n \in \mathbb{N}}$ je posloupnost reálných čísel. Pak definujeme
 $$
@@ -155,3 +160,8 @@ $$
 \liminf a_n := \lim_{n \to \infty} (\inf_{k \geq n} a_k)
 $$
 
+##### Navigace
+
+Předchozí: [[Funkce jedné reálné proměnné, základní vlastnosti]]
+Následující: [[Limita funkce včetně nevlastních, jednostranné limity]]
+Celý okruh: [[1. Teoretické základy informačních technologií]]

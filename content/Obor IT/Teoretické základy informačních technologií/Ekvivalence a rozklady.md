@@ -13,7 +13,7 @@
 - Reflexivní a symetrická relace se nazývá *tolerance*
 - *Tranzitivní tolerance* se nazývá *ekvivalence*
 
-- Pro ekvivalenci $E$ na množině $X$ definujeme pro každý $x \in X$ množinu
+- Pro ekvivalenci $E$ na množině $X$ definujeme pro každé $x \in X$ množinu
 	- $[x]_{E} = \{y \in X \mid <x,y> \in E \}$ = třída ekvivalence prvku $x$
 	- $[x]_{E}$ je množina těch prvků $y \in X$, které jsou E-ekvivalentní $x$
 
@@ -79,7 +79,7 @@
 
 - Uvažujeme-li o vztahu množiny $X$ a rozkladu $X/E$, pak víme, že každému $x \in X$ přísluší třída rozkladu $[x]_{E}$, pro kterou $x \in [x]_{E}$
 
-- Pro **ekvivalenci E na X** tedy můžeme uvažovat zobrazení **$f_{E}:X \rightarrow X/E$**,
+- Pro **ekvivalenci $E$ na $X$** tedy můžeme uvažovat zobrazení **$f_{E}:X \rightarrow X/E$**,
 	- kde $f_{E}(x) = [x]_{E}$ pro každý $x \in X$,
 	a nazýváme jej přirozené (kanonické) zobrazení.
 

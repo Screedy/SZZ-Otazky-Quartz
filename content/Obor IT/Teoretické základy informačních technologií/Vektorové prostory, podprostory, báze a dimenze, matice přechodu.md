@@ -1,7 +1,7 @@
 ### Vektorový prostor
 
 - Čtveřici $(V ;+, T, \cdot)$ nazýváme vektorový prostor, jestliže
-	1. $(V ;+)$ je abelovská grupa $s$ jednotkou $\vec{o}$ (nulový vektor);
+	1. $(V ;+)$ je abelovská grupa s jednotkou $\vec{o}$ (nulový vektor);
 	2. $T$ je číselné těleso;
 	3. $\cdot : T \times V \rightarrow V$ je levá vnější operace nad $T$ a $V$;
 	4. Pro všechny $\vec{u}, \vec{v} \in V$ a všechny $c, d \in T$ platí
@@ -13,8 +13,8 @@
 - *Vektory* ... prvky pole $V$
 - *Skaláry* ... prvky tělesa $T$
 ---
-- vektorový prostor $V$ (prvky jsou vektory) nad tělesem $T$ (prvky jsou skaláry). Platí, že "$+$": $V \times V \rightarrow V$ a "$\cdot$": $T \times V \rightarrow V$ (tzn. když **sčítám vektor jiným vektorem** tak výsledek bude zase **v tom samém vektorovém prostoru** a když **násobím vektor skalárem** tak výsledek bude **taktéž v tom samém vektorovém prostoru**)
-- operace musí být **uzavřené** (např. po násobení **nesmím** dostat něco co **není** ve vektorovém prostoru $V$)
+- Nechť máme vektorový prostor $V$ (prvky jsou vektory) nad tělesem $T$ (prvky jsou skaláry). Platí, že "$+$": $V \times V \rightarrow V$ a "$\cdot$": $T \times V \rightarrow V$ (tzn. když **sčítám vektor jiným vektorem** tak výsledek bude zase **v tom samém vektorovém prostoru** a když **násobím vektor skalárem** tak výsledek bude **taktéž v tom samém vektorovém prostoru**)
+- Operace musí být **uzavřené** (např. po násobení **nesmím** dostat něco co **není** ve vektorovém prostoru $V$)
 
 >[!Tip] Levá vnější operace
 >- Nechť' $A \neq \emptyset \neq B$. 
@@ -42,8 +42,8 @@ $$
 pouze v případě, že $c_1=c_2=\ldots=c_n=0$, se vektory $\vec{u_1}, \vec{u_2}, \ldots, \vec{u_n} \in V$ nazývají **lineárně nezávislé**.
 
 ### Báze vektorového prostoru $V$
-- je to **množina lineárně nezávislých vektorů**, které **"generují" prostor** $V$
-- generují znamená, že pomocí této množiny jsme schopni vyjádřit libovolný vektor prostoru $V$
+- Je to **množina lineárně nezávislých vektorů**, které **"generují" prostor** $V$.
+- Generují znamená, že pomocí této množiny jsme schopni vyjádřit libovolný vektor prostoru $V$.
 - (kdybychom nějaký vektor z této množiny odebrali, už bychom nedokázali vyjádřit celý prostor $V$)
 
 ### Dimenze
@@ -51,7 +51,7 @@ pouze v případě, že $c_1=c_2=\ldots=c_n=0$, se vektory $\vec{u_1}, \vec{u_2}
  - Pokud je báze nekonečná, je i dimenze nekonečná.
 
 ### Podprostor
-- Nechť $(V ;+, T, \cdot)$ je vektorový prostor nad tělesem $T$ a nechť $\emptyset \neq W \subseteq V$. Pak $(W ;+, T, \cdot)$ nazveme **podprostor vektorového prostoru** $V$, jestliže
+- Nechť $(V ;+, T, \cdot)$ je vektorový prostor nad tělesem $T$ a nechť $\emptyset \neq W \subseteq V$. Pak $(W ;+, T, \cdot)$ nazveme **podprostor vektorového prostoru** $V$, jestliže:
 	1. $\forall \vec{u}, \vec{v} \in W: \quad \vec{u}+\vec{v} \in W$,
 	2. $\forall \vec{u} \in W, \forall c \in T: \quad c \cdot \vec{u} \in W$.
 
@@ -82,13 +82,15 @@ $$
 
 >[!Example]- Isibalo - Matice přechodu
 ><iframe width="660" height="385" src="https://www.youtube.com/embed/ctXsUU_WaGU?si=q-La7AumjigiXYCX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+>
+><iframe width="660" height="385" src="https://www.youtube.com/embed/glyBotI6XY8?si=6GIj-Q6I_NrDg8nA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## Něco navíc - Podprostory:
 --- 
 ### Vlastnosti
 Věta 5.5
-Neprázdná podmnožina $W$ pole vektorového prostoru $(V ;+, T$, * ) je polem podprostoru ve $V$ právĕ když s každými prvky $\overrightarrow{u_1}, \overrightarrow{u_2}, \ldots, \overrightarrow{u_n}$ obsahuje také každou jejich lineární kombinaci.
+Neprázdná podmnožina $W$ pole vektorového prostoru $(V ;+, T, \cdot )$ je polem podprostoru ve $V$ právĕ když s každými prvky $\overrightarrow{u_1}, \overrightarrow{u_2}, \ldots, \overrightarrow{u_n}$ obsahuje také každou jejich lineární kombinaci.
 
 ### Průnik
 Průnik $W_1 \cap W_2$ dvou podprostorů $W_1$ a $W_2$ ve $V P(V ;+, T, \cdot)$ je obecně opět podprostor ve $V$. Je to "největší" (vzhledem k $\subseteq$ ) podprostor ve $V$, který je obsažen současně ve $W_1$ a $W_2$.

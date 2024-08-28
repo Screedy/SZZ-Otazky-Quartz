@@ -33,7 +33,7 @@
 		- Požadujeme, aby dvě různé třídy rozkladu $\Pi$ byly disjunktní
 	- $\cup \, \Pi = X$
 		- Sjednocení všech tříd rozkladu $\Pi$ bylo rovno množině $X$ se nazývá **rozklad na množině $X$**. 
-		- Množiny $Y \in \Pi$ nazýváme **třídy rozkladu $\Pi$**. Pro prvek $x \in X$ označíme $[x]_{\Pi}$ tu třídu rozkladu $\Pi$, která obsahuje $x$.
+- Množiny $Y \in \Pi$ nazýváme **třídy rozkladu $\Pi$**. Pro prvek $x \in X$ označíme $[x]_{\Pi}$ tu třídu rozkladu $\Pi$, která obsahuje $x$.
 
 - Na množině $X$ existují dva mezní rozklady:
 	- $[x]_{\Pi} = \{x\}$
@@ -44,12 +44,12 @@
 - Všechny rozklady pro $X = \{a,b,c,d\}$:
 	$$
 	\begin{aligned}
-	\{\{a\},\{b\},\{c\},\{d\}\} &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\
-	\{\{a,b\}, \{c\}, \{d\}\} \\
-	\{\{b\},\{a,c\},\{d\}\} \\
-	\{\{b\}, \{c\}, \{a,d\}\, \\
-	\{\{a\},\{b,c\},\{d\}\} \\
-	\{\{a,b,c\},\{d\}\} \\
+	\set{\set{a},\set{b},\set{c},\set{d}} &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\\
+	\set{\set{a,b}, \set{c}, \set{d}} \\
+	\set{\set{b},\set{a,c},\set{d}} \\
+	\set{\set{b}, \set{c}, \set{a,d}} \\
+	\set{\set{a},\set{b,c},\set{d}} \\
+	\set{\set{a,b,c},\set{d}} \\
 	\set{\set{b,c},\set{a,d}} \\
 	\set{\set{a},\set{c}, \set{b,d}} \\
 	\set{\set{a,c},\set{b,d}} \\

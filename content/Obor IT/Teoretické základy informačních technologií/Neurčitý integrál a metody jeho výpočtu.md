@@ -26,6 +26,9 @@
 	- $F(x)$ -  primitivní funkce
 	- $c$ - integrační konstanta
 
+>[!Example]- Isibalo - Co nám říká neurčitý integrál
+><iframe width="660" height="385" src="https://www.youtube.com/embed/kC9D7iy_16U?si=Lrb78mJEXKhkfTHr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### O existenci primitivní funkce
 - Nechť $f : \mathbb{R} \to \mathbb{R}$ je spojitá na intervalu $I \subseteq \mathbb{R}$ libovolného druhu, pak $f$ má na $I$ primitivní funkci.
 - Funkce $f$, která není na R spojitá, nemusí mít na R primitivní funkci
@@ -76,10 +79,16 @@ $$
 	  - tedy $\int u^{'}v = uv - \int uv^{'}$ nebo  $\int uv^{'} = uv - \int u^{'}v$
 - Tato metoda je vhodná, když je jedna funkce v součinu snadno diferencovatelná a druhá integrovatelná
 
+>[!Example]- Isibalo - Metoda per partes
+><iframe width="660" height="385" src="https://www.youtube.com/embed/gZvICMtNbeQ?si=rVZruKSuiIALJ36j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
   
 ### Substituční metoda
 - Převádíme složenou funkci, kterou neumíme integrovat do jednoduššího tvaru tak, aby šla integrovat přímo
 - Volba vhodné substituce není snadná a vyžaduje nějakou zkušenost
+
+>[!Example]- Isibalo - Substituční metoda
+><iframe width="660" height="385" src="https://www.youtube.com/embed/Qx_NnL2iSGM?si=Bbrt-ChkMwX4s4q3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### První věta o substituci
 1. Nechť funkce $t = \varphi(x)$ zobrazuje interval $(a, b)$ do intervalu $(\beta, \gamma)$ a nechť na $(a, b)$ existuje vlastní $\varphi'$.
@@ -104,7 +113,8 @@ $$
 	- doufáme, že je výraz jednodušší než původní integrál v zadání a umíme ho spočítat
 1. Vrátíme se k proměnné $x$ a hledaný neurčitý integrál má tvar $F(\varphi(x))$, $x \in (a, b)$.
 
-- Stručněji: $$
+- Stručněji: 
+  $$
 \int f(\varphi(x)) \cdot \varphi'(x) dx = \left| \begin{array}{c} \varphi(x) = t \\ \varphi'(x) dx = dt \end{array} \right| = \int f(t) dt.
 $$
   

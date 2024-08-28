@@ -1,12 +1,11 @@
 ## Posloupnost
-- Každé zobrazení $f: \mathbb{N} \to \mathbb{A}$ nazýváme **číselná posloupnost**
-	- kde $\mathbb{A}$ je libovolná množina libovolných objektů
-	- pokud je oborem hodnot číselný, pak mluvíme o **číselné posloupnosti**
+- Každé zobrazení $f: \mathbb{N} \to A$ nazýváme **číselná posloupnost**
+	- kde $A$ je libovolná množina libovolných objektů
+	- pokud je obor hodnot číselný, pak mluvíme o **číselné posloupnosti**
 - Posloupnost je **konečná**, jestliže je definičním oborem množina $\{1, 2, ..., k\}$, kde $k \in \mathbb{N}$
-	- takové posloupnosti označujeme jako *uspořádáná $n$-tice*
+	- takové posloupnosti označujeme jako *uspořádáné $n$-tice*
 - **Funkční hodnotu** funkce $f$ v bodě $n$ nazýváme $n$**-tý člen** posloupnosti a značíme $a_{n},\   b_{n}$ apod.
 - **Posloupnost s $n$-tým členem** pak zapisujeme $(a_{n})^{\infty}_{n=1}$ nebo jen $(a_{n})$
-	- čteme "posloupnost á en od jedné do nekonečna"
 - Neformálně lze chápat jako kolekci hodnot, ve které jsou prvky dány svým pořadím (sekvence)
 
 ### Způsoby zadání posloupnosti
@@ -18,7 +17,7 @@
 		- Členy posloupnosti jsou určeny pomocí jednoho nebo více předcházejících členů
 		- Typickým příkladem je Fibonacciho posloupnost: $$a_1=0, a_2=1, a_{n+2}=a_{n+1}+a_n$$
 ## Podposloupnost
-- Posloupnost $(b_{n})$ se nazývá **podposloupnost** $(a_{n})$, právě když existuje posloupnost přirozených čísel $k_{1} < k_{2} < k_{3} < ...$ tak, že $\forall{n \in N}$ je $b_{n} = a_{kn}$.
+- Posloupnost $(b_{n})$ se nazývá **podposloupnost** $(a_{n})$, právě když existuje posloupnost přirozených čísel $k_{1} < k_{2} < k_{3} < ...$ tak, že $\forall{n \in \mathbb{N}}$ je $b_{n} = a_{kn}$.
 
 ## Speciální posloupnosti
 ### Aritmetická posloupnost
@@ -93,9 +92,6 @@ $$
 - Zkoumáme chování posloupnosti pro velká přirozená čísla
 - Jedná se o hodnotu, ke které se posloupnost přibližuje, postupuje-li do nekonečna
 
->[!Example]- Isibalo - Věty o limitách posloupností
-><iframe width="660" height="385" src="https://www.youtube.com/embed/VvBPNeOYQdI?si=KeYNvbsj0alltZ8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 ### Konečné limity posloupnosti
 >[!text] Definice
 >Číslo $a \in \mathbb{R}$ se nazývá **limita posloupnosti** $(a_n)_{n=1}^{\infty}$ právě když $$\forall \epsilon > 0 \ \exists n_{0}; \forall n > n_{0}: |a_{n}-A|< \epsilon$$
@@ -108,32 +104,37 @@ $$
 
 ### Nekonečné limity posloupnosti
 - Posloupnost $a_n$, která nemá konečnou limitu, nazýváme **divergentní**
-- Říkáme, že posloupnost $(a_n)_{n=1}^{\infty}$ má limitu plus nekonečno, právě když pro každé číslo $K$ existuje $n_0 \in \mathbb{N}$ takové, že pro všechna přirozená čísla $n \geq n_0$ platí $a_n > K$. Píšeme $\lim_{{n \to \infty}} a_n = +\infty$.
-- Analogicky definujeme limitu minus nekonečno
+
+>[!def] Definice
+>Říkáme, že posloupnost $(a_n)_{n=1}^{\infty}$ má limitu $+\infty$, právě když $$\forall K \ \exists n_{0} \in \mathbb{N}; \forall n \geq n_{0}: a_{n} > K$$
+>Píšeme $\lim_{{n \to \infty}} a_n = +\infty$.
+>Analogicky definiujeme $-\infty$.
 
 ### Vlastnosti limit 
--  Každá posloupnost má nejvýše jednu limitu 
-	- posloupnost **buď limitu nemá** (je **divergentní**) nebo **má právě jednu**
-- Každá konvergentní posloupnost **je omezená**
 
-### Aritmetické operace s limitami
-- Nechť $\lim_{n \to \infty} a_n = a$, $\lim_{n \to \infty} b_n = b$ jsou konvergentní posloupnosti a nechť $p, q$ jsou reálná čísla, pak platí:
-1. $\lim_{n \to \infty} (a_n + b_n) = a + b$
-2.  $\lim_{n \to \infty} (a_n * b_n) = a * b$
-3.  $\lim_{n \to \infty} (\frac{a_n}{b_n}) = \frac{a}{b}$  (pro $b \neq 0$)
-4. $\lim_{n \to \infty} |a_n| = |a|$
+>[!info] Vlastnosti limit
+>1. Každá posloupnost má nejvýše jednu limitu.
+>	- posloupnost **buď limitu nemá** (je **divergentní**) nebo **má právě jednu**
+>2. Každá konvergentní posloupnost **je omezená**
+>3. Nechť $(a_{n})_{n=1}^{\infty}$ a $(b_{n})_{n=1}^{\infty}$ **jsou konvergentní posloupnosti** a nechť $\lim_{x \rightarrow \infty}(a_{n})=a$ a $\lim_{n \rightarrow \infty} (b_{n}) = b$.
+>	i) $\lim_{x \rightarrow \infty}(a_{n} \pm b_{n}) = \lim_{n \rightarrow \infty}(a_{n}) \pm \lim_{n \rightarrow \infty} (b_{n}) = a \pm b$
+>	ii) $\lim_{x \rightarrow \infty} (a_{n} \cdot b_{n}) = \lim_{n \rightarrow \infty}(a_{n}) \cdot \lim_{n \rightarrow \infty}(b_{n}) = a \cdot b$
+>	iii) $\lim_{x \rightarrow \infty} (\frac{a_{n}}{b_{n}}) = \frac{\lim_{x \rightarrow \infty}(a_{n})}{\lim_{x \rightarrow \infty}(b_{n})} = \frac{a}{b}$ (pro $b \neq 0$; $\forall n \in \mathbb{N}: b_{n} \neq 0$)
+>	iv) $\lim_{x \rightarrow \infty}(c \cdot a_{n}) = c \cdot \lim_{x \rightarrow \infty}(a_{n}) = c \cdot a ($pro $c \in \mathbb{R}, c \neq 0)$
 
+>[!Example]- Isibalo - Věty o limitách posloupností
+><iframe width="660" height="385" src="https://www.youtube.com/embed/VvBPNeOYQdI?si=KeYNvbsj0alltZ8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ## Limes inferior a Limes superior
 - Tyto pojmy můžeme chápat jako omezení zespoda a seshora pro hodně velké $n$ (v nekonečnu)
 - Posloupnost těchto mezí buďto nabývá nebo se nekonečně blíží v konečném počtu případů
-- Na rozdíl od limity limes inferior i limes superior vždy existují
+- Na rozdíl od limity, limes inferior i limes superior vždy existují
 	- Limita posloupnost existuje, jestliže $\limsup a_n = \liminf a_n$
 - $\liminf_{n \to \infty} a_n \leq \limsup_{n \to \infty} a_n$
 - $\liminf_{n \to \infty} a_n = \limsup_{n \to \infty} (-a_n)$
 
-![[limes-inf-sup.png | 500]]
+![[limes-inf-sup.png | 400]]
 ### Limes superior
-- Nechť $\{a_n\}_{n \in \mathbb{N}}$ je posloupnost reálných čísel. Pak definujeme
+- Nechť $(a_n)_{n \in \mathbb{N}}$ je posloupnost reálných čísel. Pak definujeme
 $$
 \limsup a_n := 
 \begin{cases} 
@@ -147,7 +148,7 @@ $$
 \limsup a_n := \lim_{n \to \infty} (\sup_{k \geq n} a_k)
 $$
 ### Limes inferior
-- Nechť $\{a_n\}_{n \in \mathbb{N}}$ je posloupnost reálných čísel. Pak definujeme
+- Nechť $(a_n)_{n \in \mathbb{N}}$ je posloupnost reálných čísel. Pak definujeme
 $$
 \liminf a_n := 
 \begin{cases} 

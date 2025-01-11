@@ -11,7 +11,7 @@
 >- **Udržovatelnost** - jak snadno lze odstranit chyby
 
 ## Klasifikace chyb
-### Z pohledu serveru
+### Podle projevu
 
 | chyba           | popis                                           |
 | --------------- | ----------------------------------------------- |
@@ -26,18 +26,23 @@
 	- Komunikace probíhá bez nějakého pevného časového rámce a tudíž detekce chyby může být komplikovaná.
 - V **synchronních systémech** existuje **časový rámec pro vykonání operací a doručení zpráv**.
 	- *Selhání uzlu může být detekováno, pokud nedojde k očekávané akci v daném časovém rámci.*
-	- Například, pokud uzlu trvá příliš dlouho zpracování nebo odeslání zprávy, může být považováno za selhání.
 - **Částečně-synchronní systémy** jsou jako **synchronní systémy bez omezení času.**
 	- Pro synchronizace se využívají **časovače**.
 	- Částečně synchronní systémy jsou často *využívány v odvětvích, kde je potřeba nějaká synchronizace*, ale **úplně synchronní systémy by byly příliš restriktivní nebo nemožné**.
 
-### Způsob jakým se chyba projevuje
+### Modely detekce chyb
 - **Fail-stop**:
 	- Okamžité ukončení a spolehlivá detekce chyby.
-	- (Tento termín se vztahuje na chování, kdy uzel, který selže, přestane pracovat, přestane vracet výsledky nebo nereaguje na žádné další požadavky).
 - **Fail-noisy**:
-	- Okamžité ukončení a nespolehlivá detekce chyby.
-	- (Fail-noisy odkazuje na chování, kdy uzel selže, ale může stále produkovat nekonzistentní nebo chybné výsledky. Uzel může například vracet nesprávné odpovědi, generovat chybná data nebo se chovat nespolehlivě).
+	- Eventuálně spolehlivě detekovatelné.
+- **Fail-silent**:
+	- Nelze rozlišit pád a vynechání.
+	- Např. Nevíme, jestli nefunguje uzel nebo kanál.
+- **Fail-safe**:
+	- O chybě nevíme nic, ale chyby jsou neškodné.
+- **Fail-arbitrary**:
+	- O chybě nevíme nic. 
+	- Teoreticky může způsobit katastrofu.
 
 ## Redundance
 - **Základní nástroj** pro konstrukci distribuovaných systémů s tolerancí chyb.
@@ -69,7 +74,7 @@ Druhy redundance:
 >- Ty si pak **mění zprávy mezi sebou** a **odpovědi** od kolegů **si značí do tabulky**
 >- Podle tabulky vyhodnotí výsledek (podle většiny) a znovu si přepošle s ostatními
 >- Následně **dochází ke shodě**
->![[MacBook-2025-01-05-002372@2x.png]]
+>![[MacBook-2025-01-05-002372.png]]
 
 <div style="text-align: center; margin-top: 20px;">
     <!-- Horní tlačítka -->
